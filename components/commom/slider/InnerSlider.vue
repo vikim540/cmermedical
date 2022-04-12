@@ -31,9 +31,6 @@ export default {
   data() {
     return {
       banners: [
-        { src: require("../../../asset/image/home/vedio.jpg"), link: "", des: '微笑矯視 - Shirley 陳欣妍' },
-        { src: require("../../../asset/image/home/vedio2.jpg"), link: "", des: '植入式隱形眼鏡 - Serene 林宣妤' },
-        { src: require("../../../asset/image/home/vedio3.jpg"), link: "", des: '微笑矯視 - Dominic 何浩文' },
 
       ],
       swiperOption: {
