@@ -21,7 +21,7 @@
 
       </div>
 
-      <nuxt-link class="link_more" to="">更多影片</nuxt-link>
+     
     </div>
 
   </div>
