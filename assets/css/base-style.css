@@ -1,0 +1,42 @@
+body {
+    font-family: "Noto Sans HK", sans-serif;
+    font-size: 18px;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 1vw;
+        letter-spacing: 0.1vw;
+    }
+
+    .more_link {
+        display: inline-block;
+        border: 0.75px solid #bbbbbb;
+        padding: 1vw ;
+        width: 10vw;
+        margin-top: 2vw;
+        color: #64acc6;
+        transition: all 0.5s;
+    }
+    .more_link:hover {
+        background: rgba(128, 197, 222, 1);
+        color: #fff;
+    }
+    .more_link span {
+        font-size: 1.5vw;
+        width: 1.5vw;
+        height: 1.5vw;
+        background: #80c5de;
+        color: #fff;
+        display: inline-block;
+        border-radius: 100%;
+        text-align: center;
+        line-height: 0.5vw;
+        padding-left: 0.2vw;
+        transition: all 0.5s;
+    }
+    .more_link:hover span {
+        background: white;
+        color: #80c5de;
+    }
+}
