@@ -182,7 +182,7 @@ export default {
 
 
 <style scoped>
-.banner {
+ .banner {
   background-image: url(../assets/images/home/banner_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
