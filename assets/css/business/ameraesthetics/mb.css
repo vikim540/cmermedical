@@ -1,0 +1,126 @@
+@media only screen and (max-width: 768px) {
+
+    .mainContent section {
+        width: 80vw;
+        margin: 20vw auto;
+
+    }
+
+    .mainContent .section1 {
+        padding: 10vw 0;
+        margin-left: 3.5vw;
+    }
+
+    .mainContent .section1 .small_card {
+        width: 73vw;
+        height: 58vw;
+        padding: 5vw;
+        position: relative;
+        z-index: 1;
+    }
+
+    .mainContent .section1 .small_card p {
+        margin-top: 2vw;
+    }
+
+    .mainContent .section1 .img_box {}
+
+    .mainContent .section1 .img_box .img1 {
+        width: 38vw;
+        left: 55vw;
+        top: -21vw;
+    }
+
+    .mainContent .section1 .img_box .img2 {
+        width: 45vw;
+        margin: 0 auto;
+    }
+
+    .mainContent .section1 .title {
+        font-size: 1rem;
+        line-height: 5.5vw;
+        top: -9vw;
+        left: 0vw;
+    }
+
+    .mainContent .section1 .title span {
+        font-size: 1.3rem;
+    }
+
+    .mainContent .section1 .bg_text {
+        font-size: 4.5vw;
+        font-weight: 900;
+        bottom: 3vw;
+        right: 4.5vw;
+        z-index: 0;
+    }
+
+    .mainContent .section1 .bg_text span:nth-child(1) {
+        margin-left: -11vw;
+
+    }
+
+    .mainContent .section2 {
+        width: 65vw;
+    }
+
+    .mainContent .section2 p {
+        text-indent: 0;
+        margin-top: 1.5vw;
+    }
+
+    .mainContent .section2 .item {
+        padding: 10vw 0;
+        margin: 7vw 0;
+    }
+
+    .mainContent .section2 .item img {
+        height: 17.5vw;
+    }
+
+    .mainContent .section2 .item h3 {
+        font-size: 28px;
+        padding: 3vw 0;
+    }
+
+    .mainContent .section2 .item h3::before {
+        width: 15vw;
+    }
+
+    .mainContent .section3 {
+        padding: 10vw 6vw;
+    }
+
+    .mainContent .section3 .left {
+        width: 80vw;
+        margin-left:-6vw;
+
+    }
+
+    .mainContent .section3 .left .social_box {
+        height: 8vw;
+    }
+
+    .mainContent .section3 .right {
+        width: 68vw;
+        padding: 5vw;
+    }
+
+    .mainContent .section3 .right p {
+        padding: 2vw;
+        padding-bottom: 0;
+
+    }
+
+    .mainContent .section3 .right a {
+        margin-left: 2vw;
+    }
+
+    .mainContent .section3 .right p::before {
+        width: 3vw;
+        height: 3vw;
+    }
+    .mainContent .section3 .more_link{
+        width: 27vw;
+    }
+}

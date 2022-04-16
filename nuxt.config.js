@@ -22,6 +22,7 @@ export default {
     'assets/css/reference.css',
     'assets/css/base-style.css',
     'assets/css/tailwind.css',
+    'assets/css/vikim.css',
     'animate.css/animate.min.css',
     { src: "swiper/dist/css/swiper.css" }
   ],

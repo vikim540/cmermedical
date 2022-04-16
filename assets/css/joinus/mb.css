@@ -1,0 +1,17 @@
+@media only screen and (max-width: 768px) {
+    .section_joinus .head .banner {
+        width: 90vw;
+        margin: 0 auto;
+        height: 55vw;
+
+    }
+
+    .section_joinus .mainContent .section2 h2 {
+        font-size: 25px;
+        margin-bottom: 5vw;
+    }
+
+    .section_joinus .mainContent .section2 h2 img {
+        width: 12vw;
+    }
+}

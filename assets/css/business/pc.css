@@ -1,0 +1,105 @@
+@media only screen and (min-width: 768px) {
+    .eye_item {
+        width: 80vw;
+        margin: 15vw auto;
+        padding: 4vw 0 3vw 4vw;
+    }
+
+    .eye_item .left {
+        margin-right: 4vw;
+    }
+
+    .eye_item .left .title {
+        top: -12.2vw;
+        left: -6.5vw;
+    }
+
+    .eye_item .left .title h2 {
+        font-size: 1.5vw;
+        line-height: 0.5vw;
+    }
+
+    .eye_item .left .title h2>span {
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+
+    .eye_item .left .title .index {
+        font-size: 10vw;
+        line-height: 10vw;
+        margin-left: 5vw;
+    }
+
+    .eye_item .left .info {
+        padding: 3vw;
+        width: 35vw;
+    }
+
+    .eye_item .left .info p {
+        text-indent: 2.2vw;
+        margin-top: 1vw;
+    }
+
+    .eye_item .left .info .logoimg {
+        padding-bottom: 1.5vw;
+    }
+
+    .eye_item .left .info .logoimg img {
+        width: 10vw;
+    }
+
+    .eye_item .left .info .logoimg::before {
+        width: 7vw;
+    }
+
+    .eye_item .left .info .logoimg::after {
+        width: 1vw;
+        height: 1vw;
+        top: 0;
+        right: 0;
+    }
+
+    .eye_item .right {}
+
+    .eye_item .right .slider_img {
+        width: 39vw;
+        margin-top: -8vw;
+    }
+
+    .mainContent .eye_list .eye_item:nth-child(2) {
+        padding: 4vw 4vw 3vw 0;
+    }
+
+    .mainContent .eye_list .eye_item:nth-child(2) .left {
+        order: 2;
+        margin-right: 0;
+        margin-left: 4vw;
+    }
+
+    .mainContent .eye_list .eye_item:nth-child(2) .left .title {
+        left: -12vw;
+    }
+
+    .mainContent .eye_list .eye_item:nth-child(2) .left .title h2 {
+        order: 2;
+    }
+
+    .mainContent .eye_list .eye_item:nth-child(2) .left .title .index {
+        margin-left: 0;
+        margin-right: 5vw;
+    }
+
+    .mainContent .eye_list .eye_item:nth-child(2) .right {
+        order: 1;
+        margin-left: -2vw;
+        
+    }
+
+    .footer {
+        margin-top: 2vw;
+    }
+
+    .info_from {
+        margin-left: 7vw;
+    }
+}

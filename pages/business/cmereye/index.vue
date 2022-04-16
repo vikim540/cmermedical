@@ -22,14 +22,14 @@
           </div>
 
           <div class="right">
-            <div class="slider_img"><img src="../../../assets/images/business/cmereye/eyecenter1.jpg" alt=""></div>
+            <div class="slider_img"><InnerSlider /></div>
             <div class="social"></div>
           </div>
         </div>
       </div>
       <div class="info_from">資料來源：
         <br>＃ 香港人口推算 2020-2069，政府統計處，2020年9月出版。
-        <br> ＊ 香港中文大學醫學院新聞稿，2021年8月30日。
+        <br>＊ 香港中文大學醫學院新聞稿，2021年8月30日。
       </div>
     </section>
 
@@ -41,11 +41,16 @@
 </template>
 
 <script>
+import "../../../assets/css/business/common.css"
+import "../../../assets/css/business/mb.css"
+import "../../../assets/css/business/pc.css"
+
+import InnerSlider from "@/components/commom/slider/InnerSlider.vue"
 import Menu from "@/components/commom/head/Menu.vue"
 import BusinessBanner from "@/components/commom/banner/BusinessBanner.vue"
 import Footer from "@/components/commom/foot/Footer.vue"
 export default {
-  components: { Menu, Footer, BusinessBanner },
+  components: { Menu, Footer, BusinessBanner,InnerSlider },
   data() {
     return {
       eyeList: [
@@ -103,110 +108,5 @@ export default {
 </script>
 
 <style scoped>
-.eye_item {
-  width: 80vw;
-  margin: 15vw auto;
-  background: #f3f3f3;
-  padding: 4vw 0 3vw 4vw;
-}
-.eye_item .left {
-  margin-right: 4vw;
-  position: relative;
-}
-.eye_item .left .title {
-  color: #80c5de;
-  white-space: pre-wrap;
-  position: absolute;
-  top: -12.2vw;
-  left: -6.5vw;
-}
-.eye_item .left .title h2 {
-  font-size: 1.5vw;
-  line-height: 0.5vw;
-}
-.eye_item .left .title h2 > span {
-  display: block;
-  font-size: 3vw;
-  line-height: 4vw;
-}
-.eye_item .left .title .index {
-  font-size: 10vw;
-  line-height: 10vw;
-  margin-left: 5vw;
-}
-.eye_item .left .info {
-  background: #fff;
-  padding: 3vw;
-  width: 35vw;
-}
-.eye_item .left .info p {
-  text-indent: 2.2vw;
-  text-align: justify;
-  margin-top: 1vw;
-}
-.eye_item .left .info .logoimg {
-  padding-bottom: 1.5vw;
-  position: relative;
-}
-.eye_item .left .info .logoimg img {
-  width: 10vw;
-}
-.eye_item .left .info .logoimg::before {
-  position: absolute;
-  content: " ";
-  width: 7vw;
-  border-bottom: 2px solid #f09038;
-  bottom: 0;
-}
-.eye_item .left .info .logoimg::after {
-  position: absolute;
-  content: " ";
-  width: 1vw;
-  height: 1vw;
-  border: 2px solid #80c5de;
-  border-left: none;
-  border-bottom: none;
-  top: 0;
-  right: 0;
-}
 
-.eye_item .right {
-}
-.eye_item .right .slider_img {
-  width: 39vw;
-  margin-top: -8vw;
-}
-
-.mainContent .eye_list .eye_item:nth-child(2) {
-  padding: 4vw 4vw 3vw 0;
-}
-
-.mainContent .eye_list .eye_item:nth-child(2) .left {
-  order: 2;
-  margin-right: 0;
-  margin-left: 4vw;
-}
-.mainContent .eye_list .eye_item:nth-child(2) .left .title {
-  left: -12vw;
-  white-space: nowrap;
-}
-.mainContent .eye_list .eye_item:nth-child(2) .left .title h2 {
-  order: 2;
-}
-
-.mainContent .eye_list .eye_item:nth-child(2) .left .title .index {
-  margin-left: 0;
-  margin-right: 5vw;
-}
-.mainContent .eye_list .eye_item:nth-child(2) .right {
-  order: 1;
-  margin-left: -2vw;
-}
-
-.footer {
-  margin-top: 2vw;
-}
-.info_from {
-  margin-left: 7vw;
-}
 </style>

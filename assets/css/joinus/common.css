@@ -1,0 +1,57 @@
+.section_joinus .banner {
+    background-image: url('../../images/joinus/banner_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.section_joinus .head .banner .bluetitle_box {
+    background: rgba(128, 197, 222, 0.8);
+}
+
+
+.section_joinus .mainContent .section1 {}
+
+.section_joinus .mainContent .section1 p::before {
+    content: " ";
+    position: absolute;
+    border-bottom: 5px solid #F09038;
+}
+
+.section_joinus .mainContent .section2 ul li img {
+    position: relative;
+    z-index: 0;
+}
+
+.section_joinus .mainContent .section2 h2 {
+    color: #80c5de;
+}
+
+.section_joinus .mainContent .section2 .text {
+    z-index: 2;
+}
+
+.section_joinus .mainContent .section2 .text h3 {
+    color: #80C5DE;
+    position: relative;
+}
+
+.section_joinus .mainContent .section2 .text h3::before {
+    content: " ";
+    position: absolute;
+    border: 2px solid #F09038;
+    border-right: none;
+    border-bottom: none;
+    top: 0;
+    left: 0;
+
+}
+
+.section_joinus .mainContent .section2 .text p {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+
+.section_joinus .mainContent .section3 .text_box {
+    color: #F09038;
+}

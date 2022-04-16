@@ -1,0 +1,122 @@
+@media only screen and (min-width: 768px) {
+    .section_joinus .head .banner {
+        height: 50vw;
+        width: 85vw;
+        margin: 0 auto;
+    }
+
+    .section_joinus .head .banner .title_box {
+        font-size: 3vw;
+        color: #404040;
+        right: 11vw;
+        top: 3.5vw;
+    }
+
+    .section_joinus .head .banner .title_box span {
+        font-size: 3.5vw;
+    }
+
+    .section_joinus .head .banner .bluetitle_box {
+        font-size: 2.7vw;
+        padding: 3vw 3vw 6vw 5vw;
+        left: -7vw;
+        top: 32vw;
+        letter-spacing: 0.2vw;
+    }
+
+    .section_joinus .mainContent .section1 {
+        margin: 8vw 0;
+    }
+
+    .section_joinus .mainContent .section1 p::before {
+        width: 3vw;
+        top: 0;
+    }
+
+    .section_joinus .mainContent .section1 p {
+        text-indent: 0;
+        color: #404040;
+        padding-top: 4vw;
+        line-height: 4vw;
+        font-size: 2vw;
+    }
+
+    .section_joinus .mainContent .section2 h2 {
+        font-size: 2.7vw;
+    }
+
+    .section_joinus .mainContent .section2 h2 img {
+        width: 5vw;
+    }
+
+    .section_joinus .mainContent .section2 ul {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    .section_joinus .mainContent .section2 ul li {
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+    }
+
+    .section_joinus .mainContent .section2 ul li img {
+        width: 60vw;
+    }
+
+    .section_joinus .mainContent .section2 .text {
+        width: 40vw;
+        top: 7vw;
+        left: -12vw;
+    }
+
+    .section_joinus .mainContent .section2 .text h3 {
+        padding-top: 2vw;
+        padding-left: 2vw;
+        font-size: 2vw;
+        margin-left: -0.5vw;
+    }
+
+    .section_joinus .mainContent .section2 .text h3::before {
+        width: 1vw;
+        height: 1vw;
+
+    }
+
+    .section_joinus .mainContent .section2 .text p {
+        padding: 1vw 2vw;
+    }
+
+    .section_joinus .mainContent .section2 ul li:nth-child(2) .text {
+        left: unset;
+        right: 7vw;
+    }
+    .section_joinus .mainContent .section2 ul li:nth-child(2) .text  p{
+        padding-right:1vw;
+    }
+    .section_joinus .mainContent .section2 ul li:nth-child(2) .text h3 {
+        text-align: right;
+        margin-left: 0vw;
+        padding-left: 0vw;
+        padding-right: 2vw;
+        padding-top: 2vw;
+    }
+
+    .section_joinus .mainContent .section2 ul li:nth-child(2) .text h3::before {
+        right: 0;
+        left: unset;
+        border: 2px solid #F09038;
+        border-bottom: none;
+        border-left: none;
+        
+    }
+
+    .section_joinus .mainContent .section2 ul li:nth-child(3) .text {
+        width: 47vw;
+    }
+    .section_joinus .mainContent .section3 {
+        margin-top: 3vw;
+    }
+    .section_joinus .mainContent .section3 .text_box{
+        font-size: 2.5vw;
+    }
+}

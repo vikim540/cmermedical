@@ -1,0 +1,19 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;500;700;900&family=Roboto&display=swap'); */
+@font-face { font-family: 'Metropolis'; src: url(/fonts/Metropolis-Regular.otf);font-weight: 300; }
+@font-face { font-family: 'Metropolis'; src: url(/fonts/Metropolis-Thin.otf);font-weight: 100;}
+body { font-family: 'Noto Sans HK'; }
+.banner_about { transform: translateX(-11%); position: relative; }
+.banner_about .banner_about_test { position: absolute; top: 0; bottom: 0; margin: auto; left: 10%; display: flex; flex-flow: column; align-items: flex-start; justify-content: center; z-index: 2;}
+.banner_about .banner_about_test h1 { font-weight: 400; font-size: 3vw; letter-spacing: 0.2em; color: #404040; }
+.banner_about .banner_about_test p { font-weight: 400; font-size: 2.1vw; letter-spacing: 0.2em; color: #FFFFFF; font-family: 'Metropolis'; }
+.banner_about .pic{position: absolute;top: 16vw;left: -10vw;z-index: 1;width: 22.5vw;}
+.fixed_scroll {z-index: 99; position: fixed; left: 0.5vw; bottom: 15vh; font-family: 'Metropolis'; font-style: normal; font-weight: 600; font-size: 20px; line-height: 26px; letter-spacing: 0.1em; color: #F09038; transform: rotate(90deg); animation: fixed_scroll 3s alternate infinite; }
+.fixed_scroll_text { position: relative; }
+.fixed_scroll_text::before { position: absolute; top: 0; bottom: 0; right: -65px; margin: auto; width: 2px; height: 10vh; content: ''; background: #F09038; transform: rotate(90deg); animation: fixed_scroll_text 3s alternate infinite; }
+
+
+
+
+/* animate */
+@keyframes fixed_scroll { 0% { transform: rotate(90deg) translateX(-95%); } 100% { transform: rotate(90deg) translateX(100%); } }
+@keyframes fixed_scroll_text { 0% { height: 10vh; } 100% { height: 5vh; } }

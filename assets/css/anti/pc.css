@@ -1,0 +1,53 @@
+@media only screen and (min-width: 768px) {
+    .section_anti .head .banner {
+        height: 50vw;
+        width: 85vw;
+        margin: 0 auto;
+    }
+
+    .section_anti .mainContent {
+        width: 55vw;
+        margin-left: 27vw;
+        margin-top: 5vw;
+    }
+
+    .section_anti .head .banner span {
+        font-size: 6vw;
+        letter-spacing: 3vw;
+        font-weight: 900;
+        right: 4vw;
+        top: 5vw;
+    }
+
+    .section_anti .mainContent h1 {
+        font-size: 2.7vw;
+        font-weight: 900;
+        letter-spacing: 0.4vw;
+        margin-bottom: 4vw;
+    }
+
+    .section_anti .mainContent .text_img {
+        margin: 3vw 0;
+    }
+
+    .section_anti .mainContent .text_img img {
+        margin-left: 2vw;
+        width: 25vw;
+    }
+
+    .section_anti .mainContent .tail_img {
+        margin: 3vw 0;
+    }
+
+    .section_anti .mainContent .tail_text {
+        padding-bottom: 2vw;
+        padding-right: 2vw;
+        font-size: 1.8vw;
+        text-indent: 0;
+    }
+
+    .section_anti .mainContent .tail_text::after {
+        width: 1vw;
+        height: 1vw;
+    }
+}

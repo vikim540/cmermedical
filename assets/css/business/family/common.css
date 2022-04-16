@@ -1,0 +1,41 @@
+.mainContent section {
+    background: #F3F3F3;
+    margin: 0 auto;
+}
+
+.mainContent .section1 h1 {
+    color: #80C5DE;
+}
+
+.section2 .des_card {
+    background-color: #fff;
+}
+
+.section2 .des_card p {
+    position: relative;
+}
+
+.section2 .des_card p::before {
+    content: " ";
+    position: absolute;
+    border: 1px solid #F09038;
+    border-right: none;
+    border-bottom: none;
+    top: 0;
+    left: 0;
+}
+
+.finally_des {
+    color: #F09038;
+    position: relative;
+}
+
+.finally_des::after {
+    content: " ";
+    position: absolute;
+    border: 1px solid #80C5DE;
+    border-top: none;
+    border-left: none;
+    right: 0;
+    bottom: 0;
+}

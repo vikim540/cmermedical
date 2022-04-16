@@ -1,0 +1,146 @@
+@media only screen and (min-width: 768px) {
+    .cmerdental_box1::after {
+        font-size: 3vw;
+        right: -11vw;
+        bottom: -2vw;
+        letter-spacing: 0.5vw;
+    }
+
+    .cmerdental_box1 {
+        margin-top: 10vw;
+        position: relative;
+        width: 82vw;
+        padding: 5vw 8vw;
+    }
+
+    .cmerdental_box1 .img_box {
+        position: relative;
+        width: 25vw;
+        height: 16vw;
+    }
+
+    .cmerdental_box1 .img_box div {
+        position: absolute;
+    }
+
+    .cmerdental_box1 .img_box div img {
+        width: 100%;
+    }
+
+    .cmerdental_box1 .img_box div:nth-child(1) {
+        top: 0;
+        z-index: 2;
+        right: 4vw;
+        width: 15vw;
+    }
+
+    .cmerdental_box1 .img_box div:nth-child(2) {
+        position: absolute;
+        bottom: -2vw;
+        left: -1vw;
+    }
+
+    .cmerdental_box1 .img_box div:nth-child(3) {
+        bottom: 0;
+        right: 0;
+        z-index: 3;
+        width: 12.5vw;
+    }
+
+
+    
+
+    .cmerdental_box1 .title {
+        width: 13vw;
+    }
+
+    .cmerdental_box1 .title h2 {
+        font-size: 2vw;
+        top: -17.5vw;
+        line-height: 3vw;
+    }
+
+    .cmerdental_box1 .title span {
+        font-size: 3vw;
+
+    }
+
+    .service {
+        margin-top: 8vw;
+        width: 70vw;
+    }
+
+    .service li {
+        padding: 3vw 0;
+    }
+
+    .service li img {
+        height: 4vw;
+    }
+
+    .service li h3 {
+        font-size: 1.5vw;
+        padding: 2vw 0;
+    }
+
+    .service li h3::after {
+        width: 7vw;
+        bottom: 1vw;
+    }
+
+    .img_show {
+        width: 82vw;
+        margin-top: 8vw;
+        padding: 4vw;
+        padding-top: 6vw;
+        height: 100%;
+    }
+
+    .img_show .img_slider {
+        width: 49.5vw;
+        bottom: 6vw;
+        right: -8vw;
+    }
+
+    .img_show .social_box {
+        height: 6vw;
+    }
+
+    .img_show::before {
+        font-size: 3vw;
+        left: -6vw;
+        top: -2.5vw;
+        letter-spacing: 0.5vw;
+    }
+    .more_box {
+        margin-top:8vw;
+        padding: 3vw 0;
+    }
+    .more_box .more_content {
+        width:52vw;
+        padding: 0 2vw;
+        padding-top: 2vw;
+    }
+    .more_box .more_content .des{
+        width: 23vw;
+    }
+    .more_box .more_content .des p{
+        margin-bottom: 2vw;
+        line-height: 1.7vw;
+    }
+
+    .more_box .more_content::before{
+        width: 1vw;
+        height: 1vw;
+    }
+
+    .more_box .more_content .img{
+       width: 22vw;
+       height: 15vw;
+    }
+
+    .more_box .more_content .img img{
+       height: 15vw;
+    }
+
+}
