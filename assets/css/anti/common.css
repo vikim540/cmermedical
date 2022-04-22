@@ -1,0 +1,37 @@
+.section_anti .head .banner {
+    background-image: url('../../images/anti/banner_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section_anti .head .banner span {
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+    color: white;
+
+}
+
+
+
+.section_anti .mainContent h1 {
+    color: #80C5DE;
+}
+
+.section_anti .mainContent h1 span {
+    color: #F09038;
+}
+
+.section_anti .mainContent .tail_text {
+    color: #F09038;
+    position: relative;
+}
+
+.section_anti .mainContent .tail_text::after {
+    content: " ";
+    position: absolute;
+    border: 2px solid #80C5DE;
+    border-left: none;
+    border-top: none;
+    right: 0;
+    bottom: 0;
+}

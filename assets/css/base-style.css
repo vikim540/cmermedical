@@ -1,6 +1,37 @@
 body {
     font-family: "Noto Sans HK", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
+}
+
+.small_card {
+    background: #fff;
+}
+
+.small_card p {
+    text-align: justify;
+}
+
+.small_card .logoimg {
+    position: relative;
+}
+
+.small_card .logoimg img {}
+
+.small_card .logoimg::before {
+    position: absolute;
+    content: " ";
+    border-bottom: 2px solid #f09038;
+    bottom: 0;
+}
+
+.small_card .logoimg::after {
+    position: absolute;
+    content: " ";
+    border: 2px solid #80c5de;
+    border-left: none;
+    border-bottom: none;
+    top: 0;
+    right: 0;
 }
 
 @media (min-width: 768px) {
@@ -12,16 +43,19 @@ body {
     .more_link {
         display: inline-block;
         border: 0.75px solid #bbbbbb;
-        padding: 1vw ;
+        padding: 1vw;
         width: 10vw;
         margin-top: 2vw;
         color: #64acc6;
         transition: all 0.5s;
+        background: #fff;
     }
+
     .more_link:hover {
         background: rgba(128, 197, 222, 1);
         color: #fff;
     }
+
     .more_link span {
         font-size: 1.5vw;
         width: 1.5vw;
@@ -35,8 +69,93 @@ body {
         padding-left: 0.2vw;
         transition: all 0.5s;
     }
+
     .more_link:hover span {
         background: white;
         color: #80c5de;
+    }
+
+    p {
+
+        text-indent: 2.2vw;
+
+    }
+
+    .small_card {
+        width: 20vw;
+        height: 16vw;
+        padding: 2vw;
+    }
+
+    .small_card .logoimg img {
+        width: 7vw;
+        padding-bottom: 2vw;
+    }
+
+    .small_card .logoimg::after {
+        width: 1vw;
+        height: 1vw;
+    }
+
+    .small_card .logoimg::before {
+        width: 5vw;
+    }
+
+    .small_card p {
+        margin-top: 1.5vw;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .more_link {
+        display: inline-block;
+        border: 0.75px solid #bbbbbb;
+        padding: 1vw;
+        width: 15vw;
+        margin-top: 2vw;
+        background: rgba(128, 197, 222, 1);
+        color: #fff;
+
+    }
+
+    .more_link span {
+        font-size: 16px;
+        width: 17px;
+        height: 17px;
+        background: white;
+        color: #80c5de;
+        display: inline-block;
+        border-radius: 100%;
+        text-align: center;
+        line-height: 0.5vw;
+        transition: all 0.5s;
+    }
+
+    .small_card {
+        width: 67vw;
+        height: 50vw;
+        padding: 5vw;
+        margin: 0 auto;
+        margin-top: 10vw;
+    }
+
+    .small_card .logoimg img {
+        width: 25vw;
+        padding-bottom: 5vw;
+    }
+
+    .small_card .logoimg::after {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .small_card .logoimg::before {
+        width: 18vw;
+    }
+
+    p {
+        text-indent: 9.2vw;
     }
 }

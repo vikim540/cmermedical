@@ -107,38 +107,87 @@ export default {
 </script>
 
 <style scoped>
+/* common */
 .footer {
-  margin-top: 10vw;
   background: #80c5de;
 }
 .footer .nav {
-  width: 71vw;
   margin: 0 auto;
   color: #fff;
-  padding: 5vw 0;
-}
-.footer .child_nav {
-  margin-top: 2vw;
-}
-.footer .child_nav li {
-  margin: 0.5vw 0;
 }
 .contact {
   background: #64acc6;
   color: #fff;
-  padding: 2vw 0;
-  font-size: 2vw;
 }
-.contact img {
-  width: 5vw;
+.footer_finally {
+  background: #fff;
 }
-.footer_finally{
-    background: #fff;
+/* pc */
+@media only screen and (min-width: 768px) {
+  .footer {
+    margin-top: 10vw;
+  }
+  .footer .nav {
+    width: 71vw;
+    padding: 5vw 0;
+  }
+  .footer .child_nav {
+    margin-top: 2vw;
+  }
+  .footer .child_nav li {
+    margin: 0.5vw 0;
+  }
+  .contact {
+    padding: 2vw 0;
+    font-size: 2vw;
+  }
+  .contact img {
+    width: 5vw;
+  }
+  .footer_finally {
     height: 5vw;
-    padding:0 14vw;
+    padding: 0 14vw;
     font-size: 0.8vw;
+  }
+  .footer_finally span {
+    margin-left: 4vw;
+  }
 }
-.footer_finally span{
-    margin-left:4vw;
+/* md */
+@media only screen and (max-width: 768px) {
+  .footer {
+    margin-top: 10vw;
+  }
+  .footer .nav {
+    width: 90vw;
+    padding: 5vw 0;
+  }
+  .footer .nav .nav_item{
+    margin: 5vw 0;
+  }
+  .footer .child_nav {
+    margin-top: 2vw;
+  }
+  .footer .child_nav li {
+    margin: 0.5vw 0;
+  }
+  .contact {
+    padding: 2vw 0;
+    font-size: 22px;
+  }
+  .contact img {
+    width: 10vw;
+  }
+  .footer_finally {
+    /* height: 5vw; */
+    padding: 2vw;
+    font-size: 12px;
+  }
+  .footer_finally span {
+    margin-left: 4vw;
+  }
+  .footer_finally img{
+    width: 15vw;
+  }
 }
 </style>

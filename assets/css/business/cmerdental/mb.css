@@ -1,0 +1,183 @@
+@media only screen and (max-width: 768px) {
+    .cmerdental_box1::after {
+        font-size: 23px;
+        right: -11vw;
+        bottom: -3vw;
+        letter-spacing: 0.5vw;
+    }
+
+    .cmerdental_box1 {
+        margin-top: 15vw;
+        position: relative;
+        width: 89vw;
+        padding: 8vw 6vw;
+    }
+
+    .cmerdental_box1 .img_box {
+        position: relative;
+        width: 78vw;
+        height: 53vw;
+        margin: 0 auto;
+    }
+
+    .cmerdental_box1 .img_box div {
+        position: absolute;
+    }
+
+    .cmerdental_box1 .img_box div img {
+        width: 100%;
+    }
+
+    .cmerdental_box1 .img_box div:nth-child(1) {
+        top: 0;
+        z-index: 2;
+        right: 4vw;
+        width: 51vw;
+    }
+
+    .cmerdental_box1 .img_box div:nth-child(2) {
+        position: absolute;
+        bottom: -2vw;
+        left: -1vw;
+        width: 57vw;
+    }
+
+    .cmerdental_box1 .img_box div:nth-child(3) {
+        bottom: 0;
+        right: 0;
+        z-index: 3;
+        width: 40vw;
+    }
+
+
+    .cmerdental_box1 .small_card {
+        width: 67vw;
+        height: 50vw;
+        padding: 5vw;
+        margin: 0 auto;
+        margin-top: 10vw;
+    }
+
+    .small_card .logoimg img {
+        width: 25vw;
+        padding-bottom: 5vw;
+    }
+
+    .small_card .logoimg::after {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .small_card .logoimg::before {
+        width: 18vw;
+    }
+
+    .small_card p {
+        margin-top: 3vw;
+    }
+
+    .cmerdental_box1 .title {}
+
+    .cmerdental_box1 .title h2 {
+        font-size: 20px;
+        top: -19vw;
+        line-height: 7vw;
+    }
+
+    .cmerdental_box1 .title span {
+        font-size: 30px;
+        display: block;
+
+    }
+
+    .service {
+        margin-top: 8vw;
+        width: 95vw;
+    }
+
+    .service li {
+        padding: 6vw 0;
+    }
+
+    .service li img {
+        height: 12vw;
+    }
+
+    .service li h3 {
+        font-size: 1rem;
+        padding: 2vw 0;
+    }
+
+    .service li h3::after {
+        width: 15vw;
+        bottom: 1vw;
+    }
+
+    .service li p {
+        font-size: 0.5rem;
+    }
+
+    .img_show {
+        width: 90vw;
+        margin-top: 8vw;
+        padding: 4vw;
+        padding-top: 6vw;
+        height: 100%;
+    }
+
+    .img_show .img_slider {
+        width: 90vw;
+        margin-left: -4vw;
+        margin-top: 5vw;
+    }
+
+    .img_show .social_box {
+        height: 6vw;
+    }
+
+    .img_show::before {
+        font-size: 23px;
+        left: -5vw;
+        top: -5.5vw;
+        letter-spacing: 0.5vw;
+    }
+
+    .more_box {
+        margin-top: 8vw;
+        padding: 10vw 0;
+    }
+
+    .more_box .more_content {
+        width: 90vw;
+        padding: 0 5vw;
+        padding-top: 5vw;
+    }
+
+    .more_box .more_content .des {
+        width: 80vw;
+    }
+
+    .more_box .more_content .des p {
+        margin-bottom: 2vw;
+
+    }
+
+    .more_box .more_content::before {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .more_box .more_content .img {
+        width: 77vw;
+        height: 52vw;
+        margin-top: 10vw;
+    }
+
+    .more_box .more_content .img img {
+        height: 52vw;
+    }
+
+    .more_link {
+        width: 25vw;
+    }
+}

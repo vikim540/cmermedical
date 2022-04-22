@@ -1,0 +1,119 @@
+@media only screen and (min-width: 768px) {
+    .mainContent section {
+        width: 80vw;
+        margin: 12vw auto;
+    }
+
+    .mainContent .section1 {
+        padding: 5.5vw 9vw;
+    }
+
+    .mainContent .section1 .small_card {
+        width: 23vw;
+        height: 18vw;
+        padding: 2vw;
+        position: relative;
+        z-index: 1;
+    }
+
+    .mainContent .section1 .img_box {}
+
+    .mainContent .section1 .img_box .img1 {
+        width: 18vw;
+        left: 17vw;
+        top: -13vw;
+    }
+
+    .mainContent .section1 .img_box .img2 {
+        width: 20vw;
+    }
+
+    .mainContent .section1 .title {
+        font-size: 1.5vw;
+        line-height: 2.5vw;
+        top: -4vw;
+        right: -7vw;
+    }
+
+    .mainContent .section1 .title span {
+        font-size: 3vw;
+    }
+
+    .mainContent .section1 .bg_text {
+        font-size: 4.5vw;
+        font-weight: 900;
+        bottom: 3vw;
+        right: 4.5vw;
+        z-index: 0;
+    }
+
+    .mainContent .section1 .bg_text span:nth-child(1) {
+        margin-left: -11vw;
+
+    }
+
+    .mainContent .section2 {
+        width: 65vw;
+    }
+
+    .mainContent .section2 p {
+        text-indent: 0;
+        margin-top: 1.5vw;
+    }
+
+    .mainContent .section2 .item {
+        padding: 4vw 0;
+    }
+    .mainContent .section2 .item:nth-child(2) {
+        border-right: none;
+        border-left: none;
+    }
+
+    .mainContent .section2 .item img {
+        height: 4.5vw;
+    }
+
+    .mainContent .section2 .item h3 {
+        font-size: 1.5vw;
+        padding: 1.5vw 0;
+    }
+
+    .mainContent .section2 .item h3::before {
+        width: 5vw;
+    }
+
+    .mainContent .section3 {
+        padding: 5vw 6vw;
+    }
+
+    .mainContent .section3 .left {
+        width: 48vw;
+        left: -4vw;
+        top: -7vw;
+
+    }
+
+    .mainContent .section3 .left .social_box {
+        height: 8vw;
+    }
+
+    .mainContent .section3 .right {
+        width: 26vw;
+        padding: 2vw;
+    }
+
+    .mainContent .section3 .right p {
+        padding: 2vw;
+        padding-bottom: 0;
+
+    }
+
+    .mainContent .section3 .right a {
+        margin-left: 2vw;
+    }
+
+    .mainContent .section3 .right p::before {
+        width: 1vw;
+        height: 1vw;
+    }
+}

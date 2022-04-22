@@ -9,43 +9,91 @@
       <div class="eye_list">
         <div class="eye_item flex" v-for="(eyeItem,index) in eyeList" :key="index">
           <div class="left">
-            <div class="title flex items-end ">
-              <h2>{{eyeItem.title}}<span>{{eyeItem.titleEn}}</span></h2>
-              <span class="index">0{{index+1}}</span>
+            <div class="title flex items-end">
+              <h2>
+                {{ eyeItem.title }}
+                <span>{{ eyeItem.titleEn }}</span>
+              </h2>
+              <span class="index">0{{ index + 1 }}</span>
             </div>
 
             <div class="info">
-              <div class="logoimg"><img :src="eyeItem.logo" alt=""></div>
-              <p>{{eyeItem.description}}</p>
-              <a :href="eyeItem.moreLink" class="more_link">了解更多 <span class="fa_right"><i class="fa fa-angle-right "></i></span> </a>
+              <div class="logoimg">
+                <img :src="eyeItem.logo" alt />
+              </div>
+              <p>{{ eyeItem.description }}</p>
+              <a :href="eyeItem.moreLink" class="more_link">
+                了解更多
+                <span class="fa_right">
+                  <i class="fa fa-angle-right"></i>
+                </span>
+              </a> 
             </div>
           </div>
 
           <div class="right">
-            <div class="slider_img"><img src="../../../assets/images/business/cmereye/eyecenter1.jpg" alt=""></div>
-            <div class="social"></div>
+            <div class="slider_img">
+              <InnerSlider />
+            </div>
+            <div class="social"> 
+              <!-- <ul>
+                <li><a href="http://">12123</a></li>
+              </ul> 
+               -->
+              
+              
+              </div>
           </div>
         </div>
       </div>
-      <div class="info_from">資料來源：
-        <br>＃ 香港人口推算 2020-2069，政府統計處，2020年9月出版。
-        <br> ＊ 香港中文大學醫學院新聞稿，2021年8月30日。
+      <div class="info_from">
+        資料來源：
+        <br />＃ 香港人口推算 2020-2069，政府統計處，2020年9月出版。
+        <br />＊ 香港中文大學醫學院新聞稿，2021年8月30日。
       </div>
     </section>
 
     <section class="foot">
       <Footer />
     </section>
-
   </div>
 </template>
 
+<style>
+.eye_item .left .title .index{font-family: 'Metropolis';transform: translateY(1.2vw);}
+.eye_item .left .title{white-space: unset;}
+.eye_item .left .title h2 {font-family: 'Metropolis';margin-left: -0.4vw;}
+.eye_item .left .title h2>span{padding-top: 0.6vw;    margin-left: -0.2vw;}
+/* mb */
+@media screen  and (max-width:768px) {
+.bannerimg img {width: 83vw !important;}
+.bannertext{position: unset !important;display: flex;justify-content: flex-end;}
+.bannertext h1{position: absolute;    right: 4vw; top: 9vw;font-size: 24px !important;}
+.bannertext .maintext{width:80vw !important;margin-top: 30px;font-size: 15px !important;line-height: 2;}
+
+}
+/* pc */
+@media screen  and (min-width:768px) {
+.bannertext h1{padding: 1vw 2vw !important;margin-right: -2vw;}
+.bannertext .maintext{font-size: 22px;}
+.bannertext .maintext{width: 34vw;margin-right: -3vw;}
+.eye_item .right .slider_img{ margin-top: 0;transform: translateY(-8vw);}
+.eye_item:nth-child(2) .left .title h2>span{white-space: nowrap;font-size: 2.8vw;}
+}
+
+</style>
+
 <script>
+import "../../../assets/css/business/common.css"
+import "../../../assets/css/business/mb.css"
+import "../../../assets/css/business/pc.css"
+
+import InnerSlider from "@/components/commom/slider/InnerSlider.vue"
 import Menu from "@/components/commom/head/Menu.vue"
 import BusinessBanner from "@/components/commom/banner/BusinessBanner.vue"
 import Footer from "@/components/commom/foot/Footer.vue"
 export default {
-  components: { Menu, Footer, BusinessBanner },
+  components: { Menu, Footer, BusinessBanner, InnerSlider },
   data() {
     return {
       eyeList: [
@@ -102,111 +150,3 @@ export default {
 };
 </script>
 
-<style scoped>
-.eye_item {
-  width: 80vw;
-  margin: 15vw auto;
-  background: #f3f3f3;
-  padding: 4vw 0 3vw 4vw;
-}
-.eye_item .left {
-  margin-right: 4vw;
-  position: relative;
-}
-.eye_item .left .title {
-  color: #80c5de;
-  white-space: pre-wrap;
-  position: absolute;
-  top: -12.2vw;
-  left: -6.5vw;
-}
-.eye_item .left .title h2 {
-  font-size: 1.5vw;
-  line-height: 0.5vw;
-}
-.eye_item .left .title h2 > span {
-  display: block;
-  font-size: 3vw;
-  line-height: 4vw;
-}
-.eye_item .left .title .index {
-  font-size: 10vw;
-  line-height: 10vw;
-  margin-left: 5vw;
-}
-.eye_item .left .info {
-  background: #fff;
-  padding: 3vw;
-  width: 35vw;
-}
-.eye_item .left .info p {
-  text-indent: 2.2vw;
-  text-align: justify;
-  margin-top: 1vw;
-}
-.eye_item .left .info .logoimg {
-  padding-bottom: 1.5vw;
-  position: relative;
-}
-.eye_item .left .info .logoimg img {
-  width: 10vw;
-}
-.eye_item .left .info .logoimg::before {
-  position: absolute;
-  content: " ";
-  width: 7vw;
-  border-bottom: 2px solid #f09038;
-  bottom: 0;
-}
-.eye_item .left .info .logoimg::after {
-  position: absolute;
-  content: " ";
-  width: 1vw;
-  height: 1vw;
-  border: 2px solid #80c5de;
-  border-left: none;
-  border-bottom: none;
-  top: 0;
-  right: 0;
-}
-
-.eye_item .right {
-}
-.eye_item .right .slider_img {
-  width: 39vw;
-  margin-top: -8vw;
-}
-
-.mainContent .eye_list .eye_item:nth-child(2) {
-  padding: 4vw 4vw 3vw 0;
-}
-
-.mainContent .eye_list .eye_item:nth-child(2) .left {
-  order: 2;
-  margin-right: 0;
-  margin-left: 4vw;
-}
-.mainContent .eye_list .eye_item:nth-child(2) .left .title {
-  left: -12vw;
-  white-space: nowrap;
-}
-.mainContent .eye_list .eye_item:nth-child(2) .left .title h2 {
-  order: 2;
-}
-
-.mainContent .eye_list .eye_item:nth-child(2) .left .title .index {
-  margin-left: 0;
-  margin-right: 5vw;
-}
-.mainContent .eye_list .eye_item:nth-child(2) .right {
-  order: 1;
-  margin-left: -2vw;
-}
-
-.footer {
-  margin-top: 2vw;
-}
-.info_from {
-  margin-left: 7vw;
-}
-</style>

@@ -1,0 +1,93 @@
+@media only screen and (min-width: 768px) {
+    .mainContent section {
+        margin: 10vw auto;
+        width: 80vw;
+    }
+
+    .mainContent .section1 {
+        padding-right: 5vw;
+        padding-bottom: 5vw;
+        padding-top: 5vw;
+    }
+
+    .mainContent .section1 h1 {
+        font-size: 1.5vw;
+        line-height: 2.5vw;
+        top: -4vw;
+        right: -7vw;
+    }
+
+    .mainContent .section1 span {
+        font-size: 3vw
+    }
+
+    ;
+
+    .mainContent .section1 .content {}
+
+    .mainContent .section1 .content .img {
+        position: relative;
+        width: 50vw;
+        height: 21vw;
+    }
+
+    .mainContent .section1 .content .img img {
+        position: absolute;
+        top: -7.5vw;
+        left: -2.5vw;
+    }
+
+    .mainContent .section1 .small_card {
+        width: 30vw;
+        height: 21vw;
+    }
+
+    .small_card .logoimg img {
+        width: 11vw;
+    }
+
+    .mainContent .section2 {
+        padding: 4vw;
+        margin-top: 13vw;
+        margin-bottom: 4vw;
+    }
+
+    .section2 .des_card {
+        width: 28vw;
+        padding: 2vw;
+    }
+
+    .section2 .des_card p {
+        padding: 2vw;
+    }
+
+    .section2 .des_card p::before {
+        width: 1vw;
+        height: 1vw;
+
+    }
+
+    .section2 .img_social {
+        bottom: 0;
+        right: -4vw;
+        width: 48vw;
+    }
+
+    .section2 .img_social .img_slider {}
+
+    .section2 .img_social .social_box {
+        height: 8vw;
+    }
+
+    .finally_des {
+        font-size: 1.5vw;
+        padding: 2vw;
+        width: 60vw;
+        margin: 0 auto;
+    }
+
+    .finally_des::after {
+        width: 1vw;
+        height: 1vw;
+    }
+}

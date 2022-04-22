@@ -237,6 +237,7 @@
 </template>
 
 <style scoped>
+/* scoped */
 .part{margin: 100px 0;}
 .about_container{max-width:1200px;margin: auto;}
 .about_container p{font-size: 20px;font-weight: 300;}
@@ -272,6 +273,23 @@
 .about_page .part_two_box_pic:nth-child(3) img:nth-child(2){margin-left: -3vw;}
       
 }
+
+@media screen and   (max-width: 768px) {
+.part{margin: 50px 0;}    
+.banner_award .banner_about_text h1{font-size: 30px;}   
+.banner_award{height: 50vw;}
+.part .titile .icon{margin-bottom: 5px;}
+.part .titile .icon img{max-width: 40px;text-align: center;}
+.part .titile.mt-40{margin-top: 50px !important;} 
+.titile h1{font-size: 24px;}
+.titile h1 img{max-height: 40px;}
+.table_award thead tr{display: flex;justify-content: space-around;width: 100vw;}
+.table_award thead tr th{width: auto;font-size: 20px;}
+.table_award tbody tr{padding: 20px 0;display: block;}
+.table_award tbody tr td{display: block;padding: 10px !important;text-align: left;font-size: 16px;line-height: 1.5;}
+.table_award tr td:nth-child(1){text-align: left;}
+}
+
 </style>
 
 <script>

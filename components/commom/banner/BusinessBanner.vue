@@ -19,34 +19,72 @@ export default {
 };
 </script>
 <style scoped>
+/* common */
+
 .businessBanner {
   position: relative;
-}
-.bannerimg img {
-  width: 82vw;
 }
 
 .bannertext {
   position: absolute;
-  right: 13vw;
-  top: 6vw;
 }
 
 .bannertext h1 {
   background: rgba(255, 255, 255, 0.7);
-  font-size: 2.5vw;
-  margin-bottom: 2vw;
   display: inline-block;
-  padding: 2vw 3vw;
   padding-right: 0;
 }
 
 .bannertext .maintext {
   background: rgba(255, 255, 255, 0.7);
-  width: 23vw;
-  text-indent: 2.2vw;
-  padding: 2vw 3vw;
   padding-right: 0;
   text-align: justify;
+}
+/* pc */
+@media only screen and (min-width: 768px) {
+  .bannerimg img {
+    width: 82vw;
+  }
+
+  .bannertext {
+    right: 13vw;
+    top: 6vw;
+  }
+
+  .bannertext h1 {
+    font-size: 2.5vw;
+    margin-bottom: 2vw;
+    padding: 2vw 3vw;
+  }
+
+  .bannertext .maintext {
+    width: 23vw;
+    text-indent: 2.2vw;
+    padding: 2vw 3vw;
+  }
+}
+/* md */
+@media only screen and (max-width: 768px) {
+  .bannerimg img {
+    width: 80vw;
+  }
+
+  .bannertext {
+    right: 0vw;
+    top: 0vw;
+  }
+
+  .bannertext h1 {
+    font-size: 2.5vw;
+    margin-bottom: 2vw;
+    padding: 2vw 3vw;
+  }
+
+  .bannertext .maintext {
+    width: 50vw;
+    text-indent: 2.2vw;
+    padding: 2vw 3vw;
+    font-size: 12px;
+  }
 }
 </style>

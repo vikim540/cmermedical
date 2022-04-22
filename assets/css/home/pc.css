@@ -1,0 +1,183 @@
+@media only screen and (min-width: 768px) {
+    .banner {
+        width: 85vw;
+        margin: 0 auto;
+        height: 37vw;
+    }
+
+    .award .title_img {
+        width: 18vw;
+        top: 30.5vw;
+        left: 9vw;
+    }
+
+    .award .deleteFixd {
+        top: 60vw;
+    }
+
+    .scroll_down {
+        margin-top: 1vw;
+    }
+
+    .award {
+        margin: 5vw 0;
+        font-size: 1.2vw;
+    }
+
+    .award .text {
+        line-height: 2.5vw;
+    }
+
+    .award .blue_box {
+        width: 30vw;
+        height: 24vw;
+        padding: 2vw 5vw 3vw 6vw;
+        margin-left: 1vw;
+    }
+
+    .award .blue_box h3 {
+        margin-bottom: 1vw;
+    }
+
+    .award .blue_box a {
+        margin-top: 5vw;
+    }
+
+    .award .blue_box a:hover {}
+
+    .award .blue_box a img {
+        width: 0.5vw;
+        margin-left: 1vw;
+    }
+
+    .business {
+        width: 71vw;
+        margin: 5vw auto;
+    }
+
+    .business h2 {
+        font-size: 2.7vw;
+    }
+
+    .business h2 img {
+        width: 5vw;
+    }
+
+    .business ul li {
+        width: 15.7vw;
+        margin: 2vw 1vw;
+    }
+
+    .business ul li:hover {
+        transform: translate(-12px, -12px);
+    }
+
+    .business ul li .img img {
+        width: 100%;
+    }
+
+    .business ul li .des {
+        padding: 1.5vw;
+        font-size: 1.2vw;
+    }
+
+    .business ul li .des img {
+        margin-right: 0.5vw;
+        width: 1.5vw;
+    }
+
+    .anti {
+        margin: 5vw auto;
+        padding-top: 1vw;
+    }
+
+    .anti::before {
+        width: 32vw;
+        height: 32vw;
+    }
+
+    .anti .anti_box {
+        width: 71vw;
+        transition: all 0.5s;
+    }
+
+    .anti img {
+        width: 71vw;
+        margin: 5vw auto;
+        z-index: 10;
+    }
+
+    .anti span {
+        top: 38%;
+        left: 7%;
+        font-size: 6vw;
+        font-weight: 900;
+        letter-spacing: 6.5vw;
+    }
+
+    .join {
+        margin-top: 10vw;
+        padding-right: 2vw;
+    }
+
+    .join .join_side_text,
+    .about .about_side_text {
+        font-size: 3.6vw;
+    }
+
+    .join .join_img {}
+
+    .join .join_img .img {
+        width: 58vw;
+    }
+
+    .join .join_img .join_link {
+        width: 16vw;
+        height: 16vw;
+    }
+
+    .about {
+        margin-top: 6vw;
+        padding-left: 2vw;
+    }
+
+    .about .about_img .img {
+        width: 57vw;
+    }
+
+    .about .about_img .about_link {
+        width: 16vw;
+        height: 16vw;
+    }
+
+    .about_box {}
+
+    .about_box .blue_box {
+        top: 10vw;
+        width: 39vw;
+        height: 25vw;
+    }
+
+    .about_box .blue_box .down_blue {
+        width: 1.5vw;
+        height: 1.5vw;
+        margin-top: 0.5vw;
+        margin-right: 0.5vw;
+    }
+
+    .about_box .blue_box .down_blue img {
+        width: 0.8vw;
+        margin-top: 0.2vw;
+    }
+
+    .about_box .blue_box .link {
+        right: 8vw;
+        bottom: 3vw;
+    }
+
+    .puzzle .puItem {
+        width: 5vw;
+        height: 5vw;
+    }
+
+}

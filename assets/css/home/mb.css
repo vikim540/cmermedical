@@ -1,0 +1,194 @@
+@media only screen and (max-width: 768px) {
+
+    .banner {
+        width: 90vw;
+        margin: 0 auto;
+        height: 55vw;
+    }
+
+    .award {
+        margin: 10vw 0;
+        font-size: 16px;
+        flex-flow: column;
+        align-items: end;
+    }
+
+    .award .title_img {
+        width: 18vw;
+        top: 30.5vw;
+        /* left: 9vw; */
+    }
+
+    .award .deleteFixd {
+        top: 60vw;
+    }
+
+    .award .text {
+        margin-right: 10VW;
+        letter-spacing: 5px;
+    }
+
+    .award .blue_box {
+        width: 70vw;
+        padding: 5vw 11vw 6vw 13vw;
+        margin-top: 5vw;
+    }
+
+    .award .blue_box h3 {
+        margin-bottom: 1vw;
+    }
+
+    .award .blue_box a {
+        margin-top: 5vw;
+    }
+
+    .award .blue_box a:hover {}
+
+    .award .blue_box a img {
+        width: 0.5vw;
+        margin-left: 1vw;
+    }
+
+    .business {
+        width: 90vw;
+        margin: 5vw auto;
+    }
+
+    .business h2 {
+        font-size: 25px;
+        margin-bottom: 5vw;
+    }
+
+    .business h2 img {
+        width: 12vw;
+    }
+
+    .business ul li {
+        width: 42vw;
+        margin: 2vw 0vw;
+    }
+
+    .business ul li:last-child {
+        margin-left: 48vw;
+    }
+
+    .business ul li .img img {
+        width: 100%;
+    }
+
+    .business ul li .des {
+        padding: 1.5vw;
+        font-size: 15px;
+    }
+
+    .business ul li .des img {
+        margin-right: 2.5vw;
+        width: 5.5vw;
+    }
+
+    .anti {
+        margin-top: 10vw;
+        /* padding-right: 2vw; */
+        width: 90vw;
+        margin: 0 auto;
+        margin-top: 10vw;
+    }
+
+    .anti::before {
+        width: 47vw;
+        height: 55vw;
+        top: -25vw;
+    }
+
+    .anti .anti_box {
+        width: 90vw;
+        transition: all 0.5s;
+    }
+
+    .anti img {
+        width: 90vw;
+        margin: 5vw auto;
+        z-index: 10;
+    }
+
+    .anti span {
+        top: 38%;
+        left: 7%;
+        font-size: 37px;
+        font-weight: 900;
+        letter-spacing: 28px;
+    }
+
+    .join {
+        width: 90vw;
+        margin: 0 auto;
+        margin-top: 10vw;
+    }
+
+    .join .join_side_text,
+    .about .about_side_text {
+        font-size: 22px;
+    }
+
+    .join .join_img {
+        width: 80vw;
+    }
+
+    .join .join_img .img {
+        width: 80vw;
+    }
+
+    .join .join_img .join_link {
+        width: 19vw;
+        height: 19vw;
+        font-size: 14px;
+    }
+
+    .about {
+        margin-top: 10vw;
+    }
+
+    .about .about_img .img {
+        width: 80vw;
+
+    }
+
+    .about .about_img .about_link {
+        width: 19vw;
+        height: 19vw;
+        font-size: 14px;
+    }
+
+    .about_box {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .about_box .blue_box {
+        top: 10vw;
+        width: 39vw;
+        height: 25vw;
+    }
+
+    .about_box .blue_box .down_blue {
+        width: 1.5vw;
+        height: 1.5vw;
+        margin-top: 0.5vw;
+        margin-right: 0.5vw;
+    }
+
+    .about_box .blue_box .down_blue img {
+        width: 0.8vw;
+        margin-top: 0.2vw;
+    }
+
+    .about_box .blue_box .link {
+        right: 8vw;
+        bottom: 3vw;
+    }
+
+    .puzzle .puItem {
+        width: 5vw;
+        height: 5vw;
+    }
+}

@@ -1,0 +1,117 @@
+@media only screen and (max-width: 768px) {
+
+    .mainContent section {
+        width:90vw;
+        margin: 18vw auto;
+    }
+
+    .mainContent .section1 {
+        padding: 5vw 3vw;
+        
+
+    }
+    .mainContent .section1 .title {
+        font-size: 20px;
+        line-height: 7.5vw;
+        top: -12vw;
+        left: 0;
+    }
+
+    .mainContent .section1 .title span {
+        font-size:45px;
+    }
+    .mainContent .section1 .small_card {
+        width: 70vw;
+        height: 75vw;
+        margin-bottom: 5vw;
+    }
+
+
+    .mainContent .section2 {
+        width: 65vw;
+    }
+
+    .mainContent .section2 p {
+        text-indent: 0;
+        margin-top: 1.5vw;
+    }
+
+    .mainContent .section2 .item {
+        padding: 10vw 0;
+        margin: 7vw 0;
+    }
+
+    .mainContent .section2 .item img {
+        height: 17.5vw;
+    }
+
+    .mainContent .section2 .item h3 {
+        font-size: 28px;
+        padding: 3vw 0;
+    }
+
+    .mainContent .section2 .item h3::before {
+        width: 15vw;
+    }
+
+
+
+    .mainContent .section3 {
+        padding: 10vw 6vw;
+    }
+
+    .mainContent .section3 .left {
+        width:78vw;
+    }
+
+    .mainContent .section3 .right {
+        width: 78vw;
+        padding: 5vw;
+        margin-top: 5vw;
+    }
+
+    .mainContent .section3 .right p {
+        padding: 2vw;
+        padding-bottom: 0;
+
+    }
+
+    .mainContent .section3 .right a {
+        margin-left: 2vw;
+    }
+
+    .mainContent .section3 .right p::before {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .mainContent .section3 .more_link {
+        width: 27vw;
+    }
+
+
+    .mainContent .section4 {
+        width: 90vw;
+        margin-top: 8vw;
+        padding: 4vw;
+        padding-top: 6vw;
+        height: 100%;
+    }
+
+    .mainContent .section4 .img_slider {
+        width: 90vw;
+        margin-left: -4vw;
+        margin-top: 5vw;
+    }
+
+    .mainContent .section4 .social_box {
+        height: 6vw;
+    }
+
+    .mainContent .section4::before {
+        font-size: 23px;
+        left: -5vw;
+        top: -5.5vw;
+        letter-spacing: 0.5vw;
+    }
+}

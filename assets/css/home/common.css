@@ -1,0 +1,168 @@
+.banner {
+    background-image: url(@/assets/images/home/banner_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    background-position: bottom;
+  }
+  .award .title_img {
+    position: fixed;
+  }
+  .award .deleteFixd {
+    position: absolute;
+  }
+  
+  .scroll_down {
+    text-align: center;
+    color: rgba(240, 144, 56, 1);
+  }
+  .award .text {
+    writing-mode: vertical-lr;
+  }
+  .award .blue_box {
+    color: #ffff;
+    background: #80c5de;
+  }
+  .award .blue_box h3 {
+    text-align: right;
+  }
+  .award .blue_box a {
+    transition: all 0.5s;
+  }
+  .business h2 {
+    color: #80c5de;
+  }
+ 
+  .business ul li .des {
+    border: 1px solid #a5a5a5;
+    border-top: none;
+  }
+  .anti {
+    position: relative;
+  }
+  .anti::before {
+    content: " ";
+    position: absolute;
+    background: #80c5de;
+    z-index: 0;
+  }
+  .anti .anti_box {
+    margin: 0 auto;
+    background: #000;
+    position: relative;
+    transition: all 0.5s;
+  }
+  
+  .anti img {
+    position: relative;
+    z-index: 10;
+    transition: all 0.5s;
+  }
+  .anti .anti_box:hover img {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+  }
+  .anti span {
+    position: absolute;
+    z-index: 11;
+    color: white;
+    white-space: nowrap;
+  }
+
+  .join .join_side_text,
+  .about .about_side_text {
+    writing-mode: vertical-lr;
+    color: #f09038;
+  }
+  .join .join_img {
+    position: relative;
+  }
+  .join .join_img .join_link {
+    position: absolute;
+    background: #ffff;
+    right: 0;
+    bottom: 0;
+  }
+
+  .about .about_img {
+    position: relative;
+    z-index: 1;
+  }
+
+  .about .about_img .about_link {
+    position: absolute;
+    background: #ffff;
+    left: 0;
+    bottom: 0;
+  }
+  .about_box {
+    position: relative;
+  }
+  .about_box .blue_box {
+    position: absolute;
+    background: #80c5de;
+  }
+  
+  .about_box .blue_box .down_blue {
+    background: #fff;
+    border-radius: 100%;
+  }
+  .about_box .blue_box .link {
+    position: absolute;
+  }
+  
+  .puzzle .puItem {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 5vw;
+    height: 5vw;
+  }
+  
+  .puzzle .pu1 {
+    background-image: url(@/assets/images/home/Puzzle1.png);
+  }
+  .puzzle .pu1:hover {
+    background-image: url(@/assets/images/home/Puzzle1a.png);
+  }
+  
+  .puzzle .pu2 {
+    background-image: url(@/assets/images/home/Puzzle2.png);
+  }
+  .puzzle .pu2:hover {
+    background-image: url(@/assets/images/home/Puzzle2a.png);
+  }
+  
+  .puzzle .pu3 {
+    background-image: url(@/assets/images/home/Puzzle3.png);
+  }
+  .puzzle .pu3:hover {
+    background-image: url(@/assets/images/home/Puzzle3a.png);
+  }
+  
+  .puzzle .pu4 {
+    background-image: url(@/assets/images/home/Puzzle4.png);
+  }
+  .puzzle .pu4:hover {
+    background-image: url(@/assets/images/home/Puzzle4a.png);
+  }
+  
+  .puzzle .pu5 {
+    background-image: url(@/assets/images/home/Puzzle5.png);
+  }
+  .puzzle .pu5:hover {
+    background-image: url(@/assets/images/home/Puzzle5a.png);
+  }
+  
+  .puzzle .pu6 {
+    background-image: url(@/assets/images/home/Puzzle6.png);
+  }
+  .puzzle .pu6:hover {
+    background-image: url(@/assets/images/home/Puzzle6a.png);
+  }
+  
+  .puzzle .pu7 {
+    background-image: url(@/assets/images/home/Puzzle7.png);
+  }
+  .puzzle .pu7:hover {
+    background-image: url(@/assets/images/home/Puzzle7a.png);
+  }

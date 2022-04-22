@@ -1,0 +1,72 @@
+.mainContent section {
+    margin: 0 auto;
+    background: #F3F3F3;
+}
+
+.mainContent section:nth-child(2) {
+    background: none;
+}
+
+.mainContent .section1 .title {
+    color: #80C5DE;
+}
+
+
+
+
+
+.mainContent .section2 .item {
+    border: 0.603464px solid #A5A5A5;
+}
+
+
+
+.mainContent .section2 .item h3 {
+    color: #80C5DE;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContent .section2 .item h3::before {
+    content: " ";
+    position: absolute;
+    border-bottom: 2px solid #F09038;
+    bottom: 0;
+
+}
+
+
+
+.mainContent .section3 .right {
+    background-color: white;
+}
+
+.mainContent .section3 .right p {
+    position: relative;
+}
+
+.mainContent .section3 .right p::before {
+    position: absolute;
+    content: " ";
+    border: 1px solid #F09038;
+    border-bottom: none;
+    border-right: none;
+    top: 0;
+    left: 0;
+}
+
+
+
+.mainContent .section4 {
+    background: #F3F3F3;
+    margin: 0 auto;
+    position: relative;
+}
+
+.mainContent .section4::before {
+    content: "/////////////////";
+    color: #F09038;
+    position: absolute;
+}

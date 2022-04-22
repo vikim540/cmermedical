@@ -1,0 +1,40 @@
+@media only screen and (max-width: 768px) {
+    .section_anti .head .banner {
+        width: 90vw;
+        margin: 0 auto;
+        height: 55vw;
+
+    }
+    .section_anti .head .banner span {
+        font-size: 30px;
+        right: 5vw;
+        top: 8vw;
+    }
+
+    .section_anti .mainContent {
+        width: 85vw;
+        margin: 0 auto;
+       margin-top: 10vw;
+
+    }
+    .section_anti .mainContent h1{
+        font-size: 20px;
+        margin-bottom: 5vw;
+    }
+    .section_anti .mainContent .text_img {
+        margin: 5vw 0;
+    }
+    .section_anti .mainContent .text_img img {
+        margin-top: 5vw;
+        
+    }
+    .section_anti .mainContent .tail_img {
+        margin: 5vw 0;
+    }
+
+    .section_anti .mainContent .tail_text::after {
+        width: 3vw;
+        height: 3vw;
+    }
+
+}

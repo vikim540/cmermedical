@@ -4,12 +4,21 @@
     <section class="head">
       <Menu />
       <div class="banner"></div>
-      <div class="scroll_down flex flex-col items-center justify-center"><span class=" font-black">Scroll</span><img src="../assets/images/common/down.svg" alt=""></div>
+      <div class="scroll_down flex-col items-center justify-center hidden md:flex"><span class=" font-black">Scroll</span>
+      <img class="mt-2" src="@/assets/images/common/down.svg" alt=""></div>
     </section>
 
     <section class="mainContent">
       <div class="award flex justify-end">
-        <img ref="title_img" :class="{deleteFixd:isDeleteFixd}" class="title_img" src="../assets/images/home/banner_txt.svg" alt="">
+<div ref="title_img" :class="{deleteFixd:isDeleteFixd}" class="title_img">
+    <div class="title_rel">
+       <p>希</p>
+ <p>望見美好</p>
+ <div class="title_center"><p>Our vision <br> for a better future</p>  </div>
+      </div>  
+</div>
+
+
         <div class="text">優質港式醫療服務品牌。<br>打造希瑪醫療成為全國性的</div>
         <div class="blue_box">
           <h3 class=" font-black">
@@ -22,25 +31,25 @@
 
       <div class="business">
         <h2 class="flex items-center justify-center font-black wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0s">希瑪 <img src="../assets/images/home/title1.svg" alt=""> 業務</h2>
-        <ul class="flex flex-wrap items-center justify-center">
+        <ul class="flex flex-wrap justify-between items-center md:justify-center">
           <li v-for="(businessIten,index) in businessList" :key="index" class=" wow animate__animated animate__fadeInDown" :data-wow-delay="'1.'+index+'s'">
             <div class="img"><img :src="businessIten.img" alt=""></div>
-            <div class="des flex font-black "><img :src="businessIten.icon" alt=""><span>{{businessIten.des}}</span></div>
+            <div class="des flex font-black items-center "><img :src="businessIten.icon" alt=""><span>{{businessIten.des}}</span></div>
           </li>
         </ul>
       </div>
 
       <div class="anti ">
         <nuxt-link to=" ">
-          <div class="anti_box  wow animate__animated animate__fadeInUp" data-wow-duration="0.8s">
+          <div class="anti_box  wow animate__animated animate__fadeInUp overflow-hidden  " data-wow-duration="0.8s">
             <img src="../assets/images/home/anti_bg.jpg" alt="">
+            <img src="../assets/images/home/AntiCovid.svg" alt="">
             <span>/抗疫專區/</span>
           </div>
         </nuxt-link>
-
       </div>
 
-      <div class="join flex  justify-end">
+      <div class="join flex justify-between  md:justify-end">
         <div class="join_img  ">
           <img class="img" src="../assets/images/home/join_bg.jpg" alt="">
           <div class="join_link flex flex-col  items-center justify-center wow animate__animated  animate__fadeInUp">
@@ -52,7 +61,7 @@
       </div>
 
       <div class="about_box">
-        <div class="about flex justify-start">
+        <div class="about flex justify-between md:justify-start">
           <div class="about_side_text  font-black wow animate__animated animate__fadeInRight"><span>ABOUT US</span></div>
           <div class="about_img  ">
             <img class="img" src="../assets/images/home/about_bg.png" alt="">
@@ -63,7 +72,7 @@
           </div>
         </div>
 
-        <div class="blue_box">
+        <div class="blue_box hidden md:block">
           <a href="">
             <div class="link flex ">
               <div class="down_blue flex items-center justify-center">
@@ -77,36 +86,47 @@
 
       </div>
 
-      <div class="puzzle mt-56">
+       <div class="puzzle mt-56">
         <div class="flex items-center justify-center relative">
-          <div class="puItem pu1"></div>
-          <div class="puItem pu2"></div>
-          <div class="puItem pu3"></div>
+          <div class="puItem pu1"><div class="puItem_rel"><div class="text">希瑪 <br>家庭醫學中心</div><img src="../assets/images/home/Puzzle1.png" alt=""></div></div>
+          <div class="puItem pu2"><div class="puItem_rel"><div class="text">希瑪 <br>體檢中心</div> <img src="../assets/images/home/Puzzle2.png" alt=""></div></div>
+          <div class="puItem pu3"><div class="puItem_rel"><div class="text">腸胃科</div><img src="../assets/images/home/Puzzle3.png" alt=""></div></div>
+          <div class="puItem pu4"><div class="puItem_rel"><div class="text">愛瑪醫美</div><img src="../assets/images/home/Puzzle4.png" alt=""></div></div>
+          <div class="puItem pu5"><div class="puItem_rel"><div class="text">希瑪眼科</div><img src="../assets/images/home/Puzzle5.png" alt=""></div></div>
+          <div class="puItem pu6"><div class="puItem_rel"><div class="text">希瑪牙科</div><img src="../assets/images/home/Puzzle6.png" alt=""></div></div>
+          <div class="puItem pu7"><div class="puItem_rel"><div class="text">希瑪<br>中西腫瘤專科</div><img src="../assets/images/home/Puzzle7.png" alt=""></div></div>
+        <div class="puzzle_left"><img src="../assets/images/home/PuzzleLeft.svg" alt="" srcset=""></div>  
         </div>
-        <div class="flex items-center justify-center relative">
-          <div class="puItem pu4"></div>
-          <div class="puItem pu5"></div>
-          <div class="puItem pu6"></div>
-          <div class="puItem pu7"></div>
-        </div>
-      </div>
+        
+      </div> 
     </section>
 
     <section class="foot">
       <Footer />
+
+<div class="scroll_top rotate-90 inline-block" @click="toTop"><i class="fa fa-caret-left"></i> TOP</div> 
+
     </section>
 
   </div>
 </template>
 
 <script>
+
 if (process.browser) { // 在这里根据环境引入wow.js
   var { WOW } = require('wowjs')
 }
+
+import "@/assets/css/home/common.css"
+import "@/assets/css/home/pc.css"
+import "@/assets/css/home/mb.css"
+
 import Menu from "@/components/commom/head/Menu.vue"
 import Footer from "@/components/commom/foot/Footer.vue"
+
+import InnerSlider from "../components/commom/slider/InnerSlider.vue"
 export default {
-  components: { Menu, Footer },
+  components: { Menu, Footer, InnerSlider },
   data() {
     return {
       businessList: [
@@ -147,6 +167,7 @@ export default {
         },
       ],
       isDeleteFixd: false,
+      gotop: false,
 
     }
 
@@ -159,298 +180,159 @@ export default {
         offset: 0
       }).init()
     }
-    window.addEventListener('scroll', this.windowScroll)
+    window.addEventListener('scroll', this.windowScroll, true)
   },
 
   methods: {
     windowScroll() {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      let scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
       if (scrollTop >= 592) {
         console.log(11);
         this.isDeleteFixd = true;
       } else {
         this.isDeleteFixd = false;
       }
-    }
+    },
+    handleScroll() {
+      let scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+      scrolltop > 1000 ? (this.gotop = true) : (this.gotop = false);
+    },
+    toTop() {
+      
+      let top = document.documentElement.scrollTop || document.body.scrollTop;
+      // 实现滚动效果 
+      const timeTop = setInterval(() => {
+        document.body.scrollTop = document.documentElement.scrollTop = top -= 50;
+        if (top <= 0) {
+          clearInterval(timeTop);
+        }
+      }, 10);
 
   },
 
 
 
+},
+
 }
 </script>
-
-
+ 
 <style scoped>
- .banner {
-  background-image: url(../assets/images/home/banner_bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 85vw;
-  margin: 0 auto;
-  height: 37vw;
-  background-position: bottom;
-}
-.award .title_img {
-  width: 18vw;
-  position: fixed;
-  top: 30.5vw;
-  left: 9vw;
-}
-.award .deleteFixd {
-  position: absolute;
-  top: 60vw;
+.business ul li{transition: all .3s ease-in !important;}
+.business ul li:hover{box-shadow: 10px 10px 0 #F09038;transform: translate(-12px, -12px) !important;}
+
+.scroll_down .font-black{animation: fade 0.8s ease-in-out alternate infinite;}
+.scroll_down img{animation: fade 0.8s ease-in-out alternate infinite;animation-delay: 0.2s;}
+
+.join .join_img::before{content: '////////';position: absolute;left: -10vw;top: -2.5vw;font-size: 3vw;color: #F09038;letter-spacing: 0.25em;}
+.join .join_img::after{content: '////////';position: absolute;left: -26vw;top: -2.5vw;font-size: 3vw;color: #80C5DE;letter-spacing: 0.25em;}
+
+@keyframes fade {
+  from {
+    opacity: 0;transform: translateY(0px);
+  }
+  to {
+    opacity: 1;transform: translateY(10px);
+  }
 }
 
-.scroll_down {
-  text-align: center;
-  color: rgba(240, 144, 56, 1);
-  margin-top: 1vw;
+/* pc */
+@media screen and (min-width:768px) {
+.about_box .blue_box{right: 0;}  
+.puzzle {position: relative;}
+.puzzle .puItem{width: fit-content;height: auto;}
+.puzzle .puItem img{visibility: hidden;}
+.puzzle .flex{max-width: 80vw; margin: 0 auto;position: relative;min-height: 46.7vw;transform: scale(.8);}
+.puzzle .flex::before{content: '';position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: auto; width: 8vw;height:4vw;background:url(../assets/images/home/Puzzlelogo.svg);transition: all .3s ease-in;background-size:auto  100% ;background-position: center;background-repeat: no-repeat;}
+.anti img{margin: auto;}
+.anti .anti_box{margin-top: 5vw;}
+.puzzle .flex .puItem{position: absolute;top:0;left: 0;right: 0;margin: auto;background-position: center;}
+.puzzle .flex .puItem:nth-child(1){left: -26.2vw; top: 2.35vw; width: 21vw; height: 21vw;}
+.puzzle .flex .puItem:nth-child(2){    left: 0; right: 0; top: 0; width: 20vw; height: 16.6vw;}
+.puzzle .flex .puItem:nth-child(3){ left: unset; right: 17.35vw; top: 2.5vw; width: 19.3vw; height: 19vw;}
+.puzzle .flex .puItem:nth-child(4){    left: -29.35vw; right: 0; top: 18.25vw; width: 18vw; height: 19.5vw;}
+.puzzle .flex .puItem:nth-child(5){   left: -14.7vw; right: 0; top: unset; bottom: 0.1vw; width: 22vw; height: 18.5vw;}
+.puzzle .flex .puItem:nth-child(6){    left: 18.35vw; right: 0; top: 28.15vw; width: 18.5vw; height: 18.5vw;}
+.puzzle .flex .puItem:nth-child(7){right: 16.75vw; left: unset; top: 16.5vw; width: 17.3vw; height: 21.2vw;}
+.puzzle .puItem_rel{position: relative;width: 100%;height: 100%;}
+.puzzle .puItem_rel .text{position: absolute;left: 0;right: 0;top: 0;bottom: 0;margin: auto;display: flex;justify-content: center;align-items: center;font-size: 1.5vw;text-align: center;color:#fff;}
+.puzzle .flex .puItem:nth-child(1) .puItem_rel .text{margin-left: -1.5vw;margin-top: 0vw;}
+.puzzle .flex .puItem:nth-child(2) .puItem_rel .text{margin-left: -2.5vw;margin-top: 0vw;}
+.puzzle .flex .puItem:nth-child(3) .puItem_rel .text{margin-left: -1.5vw;margin-top: 0vw;}
+.puzzle .flex .puItem:nth-child(4) .puItem_rel .text{margin-left: -0.5vw;margin-top:0vw;}
+.puzzle .flex .puItem:nth-child(5) .puItem_rel .text{margin-left: 2.5vw;margin-top: 0vw;}
+.puzzle .flex .puItem:nth-child(6) .puItem_rel .text{margin-left: -0.5vw;margin-top: 0vw;}
+.puzzle .flex .puItem:nth-child(7) .puItem_rel .text{    margin-left: 2.5vw; margin-top: -2vw;}
+
+.about_box .blue_box .link{align-items: flex-end;display: flex;}
+.about .about_img::before{    position: absolute; content: '/////////////////'; color: #F09038; font-size: 2vw; bottom: -1vw; right: -14vw; letter-spacing: 0.25em;} 
+.puzzle  .puzzle_left{    position: absolute;     bottom: -5vw; left: -5vw;max-width: 22vw;}
+
+.scroll_top{position: fixed;color: #F09038; bottom: 2vw;right: 2vw;z-index: 999;width: 4vw;height: 2vw;display: flex;justify-content: center;align-items: center;transition: all .3s ease-in;cursor: pointer;}
+.scroll_top:hover{background: #F09038;color: #fff;}
+.scroll_top i{margin-right: 5px;}
+.anti img:nth-child(2){position: absolute;    right: 9%; top: 20%;width: auto;height: auto;max-width: 8vw;}
+.award .title_img{    height: 11.8vw; }
+.award .title_img .title_rel{position: relative;width: 100%;height: 100%;}
+.award .title_img .title_rel::before{width: 3vw;height: 5vw;content: '';right: 0;top: 0;background:unset;position: absolute;}
+.award .title_img .title_rel .title_center{    position: absolute; top: -2vw; right: -1vw; left: 0; bottom: 0; margin: auto; display: flex; align-items: center; justify-content: center; color: #131313; text-align: right; transform: scale(0.8);}
+.award .title_img .title_rel>p{font-size: 4vw;font-weight: bold; white-space: nowrap; line-height: 1.42;text-indent: 1vw;display: inline-block;background: #fff;padding: 0.4vw 0;}
+.award .title_img .title_rel>p:nth-child(1){width: 79%;}
+.award .title_img .title_rel .title_center p{font-family:'Metropolis';  font-weight: lighter; font-size: 1vw;position: relative;margin-top: 1vw;}
+.award .title_img .title_rel>p:nth-child(2){padding-top: 0;}
+.award .title_img .title_rel .title_center p::before{position: absolute;content: ' · ';font-weight: bold;       left: -5.8vw; bottom: -2.5vw;font-size: 3vw;}
+.award .title_img.deleteFixd p{color: #F09038 !important;}
 }
 
-.award {
-  margin: 5vw 0;
-  font-size: 1.2vw;
-}
-.award .text {
-  writing-mode: vertical-lr;
-  line-height: 2.5vw;
-}
-.award .blue_box {
-  color: #ffff;
-  background: #80c5de;
-  width: 30vw;
-  height: 24vw;
-  padding: 2vw 5vw 3vw 6vw;
-  margin-left: 1vw;
-}
-.award .blue_box h3 {
-  text-align: right;
-  margin-bottom: 1vw;
-}
-.award .blue_box a {
-  margin-top: 5vw;
-  transition: all 0.5s;
-}
-.award .blue_box a:hover {
-  transform: scale(1.2);
-}
-.award .blue_box a img {
-  width: 0.5vw;
-  margin-left: 1vw;
+
+@media screen and (max-width:768px) {
+/* div{overflow-x: hidden;}   */
+.award{align-items: flex-end !important;}  
+.banner{height:calc(100vh - 85px);background-position: center right 33%; background-size: auto 100%;}
+.award .title_img{left: 9vw;}
+.award .title_img{width: 40vw;bottom: 10vh;top: unset;position: absolute;}
+.business ul li .des span{white-space: nowrap;}
+.business ul li .des img{margin-right: 3px;}
+body{overflow-y: hidden;}
+.anti span{font-size: 30px !important;}
+.anti img:nth-child(2){position: absolute;    right: 4%; top: 7%;width: auto;height: auto;max-width: 12vw;}
+.award .title_img{    height: 11.8vw; }
+.award .title_img .title_rel{position: relative;width: 100%;height: 100%;}
+.award .title_img .title_rel::before{width: 3vw;height: 5vw;content: '';right: 0;top: 0;background:unset;position: absolute;}
+.award .title_img .title_rel .title_center{    position: absolute; top: -2vw; right: -1vw; left: 0; bottom: 0; margin: auto; display: flex; align-items: center; justify-content: center; color: #131313; text-align: right; transform: scale(0.8);}
+.award .title_img .title_rel>p{font-size: 30px;font-weight: bold; white-space: nowrap; line-height: 1.42;text-indent: 1vw;display: inline-block;background: #fff;padding: 0.4vw 0;}
+.award .title_img .title_rel>p:nth-child(1){width: 79%;}
+.award .title_img .title_rel .title_center p{font-family:'Metropolis';  font-weight: lighter; font-size: 1vw;position: relative;margin-top: 0.5vw;}
+.award .title_img .title_rel .title_center p::before{position: absolute;content: ' · ';font-weight: bold;    left: -6.2vw; bottom: -2vw;font-size: 3vw;}
+.award .title_img.deleteFixd p{color: #F09038 !important;}
+
+
+.puzzle {position: relative;margin-top: 50px !important;padding-bottom: 20px;}
+.puzzle .puItem{width: fit-content;height: auto;}
+.puzzle .puItem img{visibility: hidden;}
+.puzzle .flex{max-width: 80vw; margin: 0 auto;position: relative;min-height: 46.7vw; }
+.puzzle .flex::before{content: '';position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: auto; width: 8vw;height:4vw;background:url(../assets/images/home/Puzzlelogo.svg);transition: all .3s ease-in;background-size:auto  100% ;background-position: center;background-repeat: no-repeat;}
+.puzzle .flex .puItem{position: absolute;top:0;left: 0;right: 0;margin: auto;background-position: center;}
+.puzzle .flex .puItem:nth-child(1){left: -26.2vw; top: 2.35vw; width: 21vw; height: 21vw;}
+.puzzle .flex .puItem:nth-child(2){    left: 0; right: 0; top: 0; width: 20vw; height: 16.6vw;}
+.puzzle .flex .puItem:nth-child(3){ left: unset; right: 17.35vw; top: 2.5vw; width: 19.3vw; height: 19vw;}
+.puzzle .flex .puItem:nth-child(4){    left: -29.35vw; right: 0; top: 18.25vw; width: 18vw; height: 19.5vw;}
+.puzzle .flex .puItem:nth-child(5){   left: -14.7vw; right: 0; top: unset; bottom: 0.1vw; width: 22vw; height: 18.5vw;}
+.puzzle .flex .puItem:nth-child(6){    left: 18.35vw; right: 0; top: 28.15vw; width: 18.5vw; height: 18.5vw;}
+.puzzle .flex .puItem:nth-child(7){right: 16.75vw; left: unset; top: 16.5vw; width: 17.3vw; height: 21.2vw;}
+.puzzle .puItem_rel{position: relative;width: 100%;height: 100%;}
+.puzzle .puItem_rel .text{position: absolute;left: 0;right: 0;top: 0;bottom: 0;margin: auto;display: flex;justify-content: center;align-items: center;font-size: 1.5vw;text-align: center;color:#fff;white-space: nowrap;transform: scale(0.7);}
+.puzzle .flex .puItem:nth-child(1) .puItem_rel .text{margin-left: -1.5vw;margin-top: 0vw;}
+.puzzle .flex .puItem:nth-child(2) .puItem_rel .text{margin-left: -2.5vw;margin-top: 0vw;}
+.puzzle .flex .puItem:nth-child(3) .puItem_rel .text{margin-left: -1.5vw;margin-top: 0vw;}
+.puzzle .flex .puItem:nth-child(4) .puItem_rel .text{margin-left: -0.5vw;margin-top:0vw;}
+.puzzle .flex .puItem:nth-child(5) .puItem_rel .text{margin-left: 2.5vw;margin-top: 0vw;}
+.puzzle .flex .puItem:nth-child(6) .puItem_rel .text{margin-left: -0.5vw;margin-top: 0vw;}
+.puzzle .flex .puItem:nth-child(7) .puItem_rel .text{    margin-left: 2.5vw; margin-top: -2vw;}
+.puzzle  .puzzle_left{    position: absolute;     bottom: -5vw; left: -5vw;max-width: 22vw;}
+
 }
 
-.business {
-  width: 71vw;
-  margin: 5vw auto;
-}
-.business h2 {
-  color: #80c5de;
-  font-size: 2.7vw;
-}
-.business h2 img {
-  width: 5vw;
-}
-.business ul li {
-  width: 15.7vw;
-  margin: 2vw 1vw;
-  transition: all 0.5s;
-}
-.business ul li:hover {
-  box-shadow: 12px 12px 0px 0px #f09038;
-  transform: translate(-12px, -12px);
-}
-.business ul li .img img {
-  width: 100%;
-}
-.business ul li .des {
-  border: 1px solid #a5a5a5;
-  border-top: none;
-  padding: 1.5vw;
-  font-size: 1.2vw;
-}
-.business ul li .des img {
-  margin-right: 0.5vw;
-  width: 1.5vw;
-}
-.anti {
-  margin: 5vw auto;
-  position: relative;
-  padding-top: 1vw;
-}
-.anti::before {
-  content: " ";
-  position: absolute;
-  width: 32vw;
-  height: 32vw;
-  background: #80c5de;
-  top: 0;
-  z-index: 0;
-}
-.anti .anti_box {
-  width: 71vw;
-  margin: 0 auto;
-  background: #000;
-  position: relative;
-  transition: all 0.5s;
-}
 
-.anti img {
-  position: relative;
-  width: 71vw;
-  margin: 5vw auto;
-  z-index: 10;
-  transition: all 0.5s;
-}
-.anti .anti_box:hover img {
-  opacity: 0.6;
-  filter: alpha(opacity=60);
-}
-.anti span {
-  position: absolute;
-  top: 38%;
-  left: 7%;
-  z-index: 11;
-  font-size: 6vw;
-  font-weight: 900;
-  color: white;
-  letter-spacing: 6.5vw;
-  white-space: nowrap;
-}
-
-.join {
-  margin-top: 10vw;
-  padding-right: 2vw;
-}
-.join .join_side_text,
-.about .about_side_text {
-  writing-mode: vertical-lr;
-  color: #f09038;
-  font-size: 3.6vw;
-}
-.join .join_img {
-  position: relative;
-}
-.join .join_img .img {
-  width: 58vw;
-}
-.join .join_img .join_link {
-  position: absolute;
-  background: #ffff;
-  right: 0;
-  bottom: 0;
-  width: 16vw;
-  height: 16vw;
-}
-.join .join_img .join_link > span,
-.about .about_img .about_link > span {
-  font-size: 2vw;
-}
-
-.about {
-  margin-top: 6vw;
-  padding-left: 2vw;
-}
-.about .about_img {
-  position: relative;
-  z-index: 1;
-}
-.about .about_img .img {
-  width: 57vw;
-}
-.about .about_img .about_link {
-  position: absolute;
-  background: #ffff;
-  left: 0;
-  bottom: 0;
-  width: 16vw;
-  height: 16vw;
-}
-.about_box {
-  position: relative;
-}
-.about_box .blue_box {
-  position: absolute;
-  background: #80c5de;
-  right: 0;
-  top: 10vw;
-  width: 39vw;
-  z-index: 0;
-  height: 25vw;
-}
-
-.about_box .blue_box .down_blue {
-  width: 1.5vw;
-  height: 1.5vw;
-  background: #fff;
-  border-radius: 100%;
-  margin-top: 0.5vw;
-  margin-right: 0.5vw;
-}
-.about_box .blue_box .down_blue img {
-  width: 0.8vw;
-  margin-top: 0.2vw;
-}
-
-.about_box .blue_box .link {
-  position: absolute;
-  right: 8vw;
-  bottom: 3vw;
-}
-
-.puzzle .puItem {
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 5vw;
-  height: 5vw;
-}
-
-.puzzle .pu1 {
-  background-image: url(../assets/images/home/Puzzle1.png);
-}
-.puzzle .pu1:hover {
-  background-image: url(../assets/images/home/Puzzle1a.png);
-}
-
-.puzzle .pu2 {
-  background-image: url(../assets/images/home/Puzzle2.png);
-}
-.puzzle .pu2:hover {
-  background-image: url(../assets/images/home/Puzzle2a.png);
-}
-
-.puzzle .pu3 {
-  background-image: url(../assets/images/home/Puzzle3.png);
-}
-.puzzle .pu3:hover {
-  background-image: url(../assets/images/home/Puzzle3a.png);
-}
-
-.puzzle .pu4 {
-  background-image: url(../assets/images/home/Puzzle4.png);
-}
-.puzzle .pu4:hover {
-  background-image: url(../assets/images/home/Puzzle4a.png);
-}
-
-.puzzle .pu5 {
-  background-image: url(../assets/images/home/Puzzle5.png);
-}
-.puzzle .pu5:hover {
-  background-image: url(../assets/images/home/Puzzle5a.png);
-}
-
-.puzzle .pu6 {
-  background-image: url(../assets/images/home/Puzzle6.png);
-}
-.puzzle .pu6:hover {
-  background-image: url(../assets/images/home/Puzzle6a.png);
-}
-
-.puzzle .pu7 {
-  background-image: url(../assets/images/home/Puzzle7.png);
-}
-.puzzle .pu7:hover {
-  background-image: url(../assets/images/home/Puzzle7a.png);
-}
 </style>
