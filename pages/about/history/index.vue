@@ -1,6 +1,11 @@
 <template>
       <div  >
- 12312312
+   
+
+   <div class="history_head">
+        2131232323
+   </div>
+   <div class="history_foot"></div>
 
 
 </div>
